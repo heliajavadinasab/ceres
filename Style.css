@@ -1,0 +1,272 @@
+/* Ensure the html and body take up the full height of the viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #282B28;
+    line-height: 1.6;
+    background-color: #D36135;
+}
+
+/* Wrapper to flex container with column direction */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Main content to expand to fill available space */
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.maintitle {
+    position: relative;
+    padding: 150px;
+    color: white;
+    text-align: center;
+    z-index: 1;
+    background-color: #282B28;
+}
+
+.maintitle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(images/BG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+
+
+/* Title styles */
+.maintitle h1, .maintitle h2, .maintitle p {
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.8;
+}
+
+/* Menu styling */
+.menu {
+    position: relative;
+    background-image: url(images/logo.png);
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    background-position: 10px center;
+    padding-left: 70px;
+    padding: 10px;
+    background-color: #D36135;
+}
+.logo-link {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 100px;
+    height: 100px;
+    transform: translateY(-50%);
+    z-index: 1;
+    display: block;
+    text-indent: -9999px; /* Hides any text inside */
+}
+.menu ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu li a {
+    color: #282B28;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 2px;
+    font-family: cursive;
+    transition: background-color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #83BCA9;
+}
+
+/* Contact button styling */
+.Contactbutton {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    color: white;
+    background-color: #D36135;
+    border: none;
+    font-family: cursive;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-size: 20px;
+}
+
+.Contactbutton:hover {
+    background-color: #83BCA9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 5);
+}
+
+/* Main content styling */
+main img {
+    max-width: 30%;
+    height: auto;
+    float: right;
+    margin: 0 0 20px 20px;
+}
+
+.firstnote {
+    max-width: 1300px;
+    margin: 20px auto;
+    background-color: white;
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+main h1 {
+    font-size: 2em;
+    color: white;
+    margin-bottom: 20px;
+}
+
+main h2 {
+    color: #D36135;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #3E5641;
+    margin-bottom: 20px;
+    
+}
+
+main ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 800px;
+}
+
+main li {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 5);
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #3E5641;
+    outline: none;
+}
+
+form button {
+    background-color: #3E5641;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #D36135;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 5);
+}
+
+.formview {
+    background-color: #83BCA9;
+    padding: 10px;
+}
+
+.formview h1 {
+    text-align: center;
+    color: white;
+}
+
+/* Footer styling */
+footer {
+    background: #A24936;
+    color: white;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info {
+    margin-bottom: 1em;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.quick-links a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.quick-links a:hover {
+    text-decoration: underline;
+}
+
+

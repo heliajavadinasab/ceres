@@ -1,0 +1,163 @@
+/* Ensure the html and body take up the full height of the viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #282B28;
+    line-height: 1.6;
+    background-color: rgb(255, 255, 255);
+}
+
+/* The wrapper should be a flex container with column direction */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/* Additional styles */
+.maintitle {
+    color:  white;
+    text-align: center;
+    padding: 20px;
+    background-color: #3E5641;
+    margin-bottom: 50px;
+}
+
+.maintitle h1 {
+    color: #A24936;
+}
+
+.menu {
+    position: relative;
+    background-image: url(images/logo.png);
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    background-position: 10px center;
+    padding-left: 70px;
+    padding: 10px;
+   
+}
+.logo-link {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 100px;
+    height: 100px;
+    transform: translateY(-50%);
+    z-index: 1;
+    display: block;
+    text-indent: -9999px; /* Hides any text inside */
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu li a {
+    color:  #000000;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 2px;
+    font-family: cursive;
+    transition: background-color 0.3s ease;
+    
+}
+
+.menu li a:hover {
+    color: #83BCA9;
+}
+
+.intro { 
+    font-size: larger;
+    text-align: center;
+}
+
+/* Image styles */
+.Myimage {
+    float: left;
+    width: 350px;
+    margin: 0 50px 20px 400px;
+}
+
+.Hisimage {
+    float: right;
+    width: 350px;
+    margin: 0 400px 20px 50px;
+}
+
+/* Paragraph styles */
+.Mypara, .Hispara, .Lastpara {
+    text-align: justify;
+    margin-bottom: 200px;
+}
+
+.Mypara {
+    margin-right: 400px;
+}
+
+.Hispara {
+    margin-left: 400px;
+}
+
+.call-to-action-section {
+    margin: 0 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color:#83BCA9 ;
+
+    box-shadow: 10px 10px rgba(0, 0, 0, 5);
+    padding: 15px;
+    border-radius: 10px;
+
+
+    
+}
+footer {
+    background: #A24936;
+    color: white;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info {
+    margin-bottom: 1em;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.quick-links a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.quick-links a:hover {
+    text-decoration: underline;
+}

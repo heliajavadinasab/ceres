@@ -1,0 +1,170 @@
+/* Ensure the html and body take up the full height of the viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #282B28;
+    line-height: 1.6;
+    background-color: rgb(255, 255, 255);
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/* Additional styles */
+.maintitle {
+    color:  white;
+    text-align: center;
+    padding: 20px;
+    background-color: #3E5641;
+    margin-bottom: 50px;
+}
+
+.maintitle h1 {
+    color: #A24936;
+}
+
+.menu {
+    position: relative;
+    background-image: url(images/logo.png);
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    background-position: 10px center;
+    padding-left: 70px;
+    padding: 10px;
+ 
+}
+.logo-link {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 100px;
+    height: 100px;
+    transform: translateY(-50%);
+    z-index: 1;
+    display: block;
+    text-indent: -9999px; /* Hides any text inside */
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu li a {
+    color:  #000000;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 2px;
+    font-family: cursive;
+    transition: background-color 0.3s ease;
+    
+}
+
+.menu li a:hover {
+    color: #83BCA9;
+}
+
+/* Style the page title */
+.maintitle {
+    color:  white;
+    text-align: center;
+    padding: 20px;
+    background-color: #3E5641;
+    margin-bottom: 50px;
+}
+
+/* Style the form */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+form input:focus, form textarea:focus {
+    border-color:#3E5641;
+    outline: none;
+}
+
+form button {
+    background-color: #3E5641;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #D36135;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 5);
+}
+
+/* Style the footer */
+footer {
+    background: #A24936;
+    color: white;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info {
+    margin-bottom: 1em;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.quick-links a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.quick-links a:hover {
+    text-decoration: underline;
+}
